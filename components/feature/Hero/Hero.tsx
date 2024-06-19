@@ -31,16 +31,7 @@ export const Hero = () => {
           </div>
           <div className='leading-none mt-5'>
             <span className='text-[14px] font-medium'>
-              make sure to read{' '}
-              <Link
-                href='/overview'
-                className='font-semibold italic underline-offset-2 underline'
-              >
-                project overview
-              </Link>{' '}
-              to understand
-              <br />
-              the whole project better
+              Build using Next.js, Tailwind CSS, and TypeScript
             </span>
           </div>
           <div className='mt-5'>
