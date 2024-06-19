@@ -88,7 +88,7 @@ const ProductDetail = ({ params }: { params: { product_id: string } }) => {
       {product && (
         <div className='min-h-screen w-full'>
           <div className='block sm:flex w-full gap-5 p-5'>
-            <div className= 'h-[200px] sm:h-[300px] lg:h-[350px] w-full sm:w-[300px] rounded-[15px] border flex justify-center items-center object-cover object-top overflow-hidden'>
+            <div className='h-[200px] sm:h-[300px] lg:h-[350px] w-full sm:w-[300px] rounded-[15px] border flex justify-center items-center object-cover object-top overflow-hidden'>
               <Image
                 src={product.image}
                 alt={product.title}
@@ -182,20 +182,10 @@ const ProductDetail = ({ params }: { params: { product_id: string } }) => {
           </div>
           <div className='px-5 pb-[50px]'>
             <div>
-              <div className='flex items-center justify-between w-full'>
-                <div>
-                  <span className='text-[16px] font-semibold'>
-                    Similar Porducts
-                  </span>
-                </div>
-                <div>
-                  <Link
-                    href={`/catrgory/${product.category}`}
-                    className='text-[14px] text-blue-500 underline underline-offset-2'
-                  >
-                    see all
-                  </Link>
-                </div>
+              <div>
+                <span className='text-[16px] font-semibold'>
+                  Similar Porducts
+                </span>
               </div>
               <div className='grid grid-cols-2 sm:grid-cols-3  md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-7 gap-4 mt-5'>
                 {similarProducts?.map((product, index) => (

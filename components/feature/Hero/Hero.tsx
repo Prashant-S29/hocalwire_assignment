@@ -4,7 +4,7 @@ import React from 'react';
 export const Hero = () => {
   return (
     <>
-      <div className='w-full min-h-[calc(100vh-100px)] bg-white flex justify-center items-center p-5 leading-tight sm:text-center'>
+      <div className='w-full relative min-h-[calc(100vh-100px)] bg-white flex justify-center items-center p-5 leading-tight sm:text-center'>
         <div>
           <div>
             <span className='text-[20px] sm:text-[28px] md:text-[32px] lg:text-[40px] font-bold'>
@@ -50,6 +50,15 @@ export const Hero = () => {
               className='font-semibold underline-offset-2 underline'
             >
               Source code
+            </Link>
+          </div>
+
+          <div className='absolute left-[50%] bottom-0 -translate-x-1/2 mb-5 w-full px-5 flex justify-center items-center'>
+            <Link
+              href='/products'
+              className='rounded-md border sm:w-fit w-full text-center border-[#1e1e1e] bg-[#1e1e1e] px-7 py-4 text-[12px] text-white'
+            >
+              Get Started
             </Link>
           </div>
         </div>

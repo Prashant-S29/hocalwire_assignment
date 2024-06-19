@@ -4,8 +4,7 @@ const NavLinks: NavlinkProps[] = [
   { href: '/', text: 'Home' },
   { href: '/products', text: 'All Products' },
   { href: '/cart', text: 'My Cart' },
-  { href: '/overview', text: 'Overview' },
-  { href: '/contact', text: 'About Me' },
+  { href: '/about', text: 'About Me' },
 ];
 
 export { NavLinks };
